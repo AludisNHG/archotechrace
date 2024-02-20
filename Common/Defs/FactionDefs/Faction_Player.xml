@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<!-- Just need to set <basicMemberKind>Colonist</basicMemberKind> -->
+	<FactionDef ParentName="PlayerFactionBase">
+        <defName>archorace_playable</defName>
+        <label>New Archotech Arrivals</label>
+		<description>A colony of recently-arrived off-worlders.</description>
+        <basicMemberKind>Archorace_Colonist</basicMemberKind>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <factionIconPath>Icon/Town</factionIconPath>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+        <backstoryFilters>
+			<li>
+				<categories>
+					<li>ArchotechBackstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

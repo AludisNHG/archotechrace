@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.RaceSettings>
+    <defName>ArchoRace_Settings</defName>
+    <pawnKindSettings>
+		<alienslavekinds>
+			<li>
+				<kindDefs>
+					<li>Archorace_Colonist</li>
+				</kindDefs>
+				<chance>0.1</chance>
+			</li>
+		</alienslavekinds>
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+					<li>Archorace_Colonist</li>
+				</kindDefs>
+				<chance>0.1</chance>
+			</li>
+		</alienrefugeekinds>
+		<alienwandererkinds>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>Archorace_Colonist</li>
+              </kindDefs>
+              <chance>0.1</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+          </factionDefs>
+        </li>
+		</alienwandererkinds>
+        <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>Archorace_Colonist</li>
+              </kindDefs>
+              <chance>0.1</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+          </factionDefs>
+        </li>
+		</startingColonists>
+	</pawnKindSettings>
+  </AlienRace.RaceSettings>
+  
+</Defs>

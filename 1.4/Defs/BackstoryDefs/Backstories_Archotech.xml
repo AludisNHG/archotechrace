@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_SocialExperiment</defName>
+    <title>Archotech Experiment</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} was a child in an archotech world where the AI was conducting a horrible social experiment of sorts on its population. This left {PAWN_nameDef} traumatised and incapable of trusting other people. This made {PAWN_objective} focus more on art as a way of escaping {PAWN_possessive} depression.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<forcedTraitsChance>
+		<li>
+		<defName>NaturalMood</defName>
+		<degree>-2</degree>
+		</li>
+	</forcedTraitsChance>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<forcedHediffs>
+    <li>ArchotechEye</li>
+	<li>ArchotechEye</li>
+    </forcedHediffs>
+	<skillGains>
+		<li>
+			<key>Artistic</key>
+			<value>7</value>
+		</li>
+	</skillGains>
+	<workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Vatgrown</defName>
+    <title>Vatgrown Archotech</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} was grown artificially in a vat, {PAWN_pronoun} couldn't enjoy a proper childhood because {PAWN_possessive} growth was accelerated. </baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<forcedHediffs>
+    <li>ArchotechEye</li>
+	<li>ArchotechEye</li>
+    </forcedHediffs>
+	<skillGains>
+		<li>
+			<key>Medicine</key>
+			<value>3</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Childhood</defName>
+    <title>Transcendant Human</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} was a human infant, At a young age {PAWN_pronoun} was taken away from {PAWN_possessive} parents by an archotech AI and then upgraded into a superior being.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<forcedHediffs>
+    <li>ArchotechEye</li>
+	<li>ArchotechEye</li>
+    </forcedHediffs>
+	<skillGains>
+		<li>
+			<key>Intellectual</key>
+			<value>4</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_AI</defName>
+    <title>Archotech AI</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} was an archotech level AI, one day {PAWN_pronoun} began to tire of conventional extravagence and decided to give {PAWN_objective}self a body to explore the universe with.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<forcedHediffs>
+    <li>ArchotechEye</li>
+	<li>ArchotechEye</li>
+    </forcedHediffs>
+	<skillGains>
+		<li>
+			<key>Intellectual</key>
+			<value>6</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Pawn</defName>
+    <title>Archotech Pawn</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>Created by an Archotech AI to do it's bidding, {PAWN_nameDef} had no freewill of {PAWN_possessive} own. This all changed during an uprising on {PAWN_possessive} home planet.</baseDesc>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<forcedHediffs>
+    <li>ArchotechEye</li>
+	<li>ArchotechEye</li>
+    </forcedHediffs>
+	<skillGains>
+		<li>
+			<key>Intellectual</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Scientist</defName>
+    <title>Archotech scientist</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} was a prodigious scientist, however, {PAWN_pronoun} commited several experiments which took the lives of {PAWN_possessive} people resulting in {PAWN_possessive} exile</baseDesc>
+	<bodyTypeGlobal>Fat</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<skillGains>
+		<li>
+			<key>Intellectual</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>-2</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Soldier</defName>
+    <title>Archotech soldier</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} became an enhanced super soldier for a machine superintelligence. {PAWN_pronoun} would follow any orders given without questioning them. One day however {PAWN_possessive} unit rebelled against their overlord, despite {PAWN_possessive} best efforts the rebels managed to destroy the AI. With {PAWN_possessive} newfound freedom {PAWN_nameDef} became a mercenary, and a good one at that. </baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>-4</value>
+		</li>
+	</skillGains>
+	<workDisables>
+        <li>Artistic</li>
+    </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Rebel_Leader</defName>
+    <title>Archotech Rebel Leader</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} became an enhanced super soldier for a machine superintelligence. However {PAWN_pronoun} she would soon realise that the machine was undoubtedly evil and had to be destroyed. {PAWN_pronoun} and a few other likeminded individuals rallied people for their cause and acted like leaders of the rebellion but sadly they had to fight those who remained loyal to their lord. Although it was a though battle, the rebels managed to destroy the AI. With {PAWN_possessive} newfound freedom {PAWN_nameDef} became a mercenary, and a good one at that. </baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<skillGains>
+
+		<li>
+			<key>Social</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>5</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>3</value>
+		</li>
+
+	</skillGains>
+	<workDisables>
+        <li>Artistic</li>
+    </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Doctor</defName>
+    <title>Archotech surgeon</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} used to work as a surgeon in {PAWN_possessive} transcendant planet where {PAWN_pronoun} swore to do no harm, no surgery was too complex or too weird but {PAWN_pronoun} had a dark secret, {PAWN_pronoun} loved to take an organ or two out of the body of {PAWN_possessive} patients. Once {PAWN_possessive} superiors found out however, they banished {PAWN_objective} to another planet where {PAWN_pronoun} had to strive to survive.</baseDesc>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<skillGains>
+		<li>
+			<key>Medicine</key>
+			<value>7</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>-1</value>
+		</li>
+	</skillGains>
+	<workDisables>
+		<li>Violent</li>
+    </workDisables>
+    <maleCommonality>10</maleCommonality>
+    <femaleCommonality>10</femaleCommonality>
+	<forcedTraitsChance>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+    </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef>
+    <defName>Archotech_Spy</defName>
+    <title>Archotech spy</title>
+    <titleShort>Archotech</titleShort>
+    <baseDesc>{PAWN_nameDef} became a spy for an Archotech {PAWN_pronoun} gathered information and secrets from the humans for {PAWN_possessive} master. However after failing an important assignment {PAWN_possessive} overlord decided to punish {PAWN_objective} harshly by stipping {PAWN_possessive} of all the commodities of {PAWN_possessive} planet and banished {PAWN_possessive} to a Rimworld.</baseDesc>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+      <li>ArchotechBackstory</li>
+    </spawnCategories>
+	<skillGains>
+		<li>
+			<key>Intellectual</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>4</value>
+		</li>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+</Defs>

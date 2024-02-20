@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="ArchotechBase" Abstract="True">
+    <race>Archorace</race>
+    <defaultFactionType>Archorace_Faction</defaultFactionType>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+	<backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>ArchotechBackstory</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+	<initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>55~60</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ArchotechBase">
+    <defName>ArchotechSoldier</defName>
+    <label>archotech soldier</label>
+    <combatPower>100</combatPower>
+    <chemicalAddictionChance>0.08</chemicalAddictionChance>
+    <apparelMoney>3800~1000000</apparelMoney>
+    <apparelTags>
+      <li>SpacerMilitary</li>
+      <li>Archotech</li>
+      <li>Archon</li>
+    </apparelTags>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelAllowHeadgearChance>66</apparelAllowHeadgearChance>
+    <weaponMoney>3800~10000</weaponMoney>
+    <weaponTags>
+      <li>SpacerGun</li>
+      <li>ArchotechWeapons</li>
+      <li>ArchotechMelee</li>
+      <li>RangedArchotech</li>
+      <li>MeleeArchotech</li>
+      <li>ArchobladeBladelink</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+    <techHediffsChance>0.40</techHediffsChance>
+    <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ArchotechBase">
+	<defName>ArchotechCommander</defName>
+    <label>archotech commander</label>
+    <labelPlural>archotech commanders</labelPlural>
+    <combatPower>40</combatPower>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>500</minGenerationAge>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>3800~10000</weaponMoney>
+    <weaponTags>
+      <li>SpacerGun</li>
+      <li>ArchotechWeapons</li>
+      <li>ArchotechMelee</li>
+      <li>RangedArchotech</li>
+      <li>MeleeArchotech</li>
+      <li>ArchobladeBladelink</li>
+    </weaponTags>
+    <apparelMoney>3800~1000000</apparelMoney>
+    <apparelTags>
+      <li>SpacerMilitary</li>
+      <li>Archotech</li>
+      <li>Archon</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_BowlerHat</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ArchotechBase">
+	<defName>Archotech_Trader</defName>
+    <label>town trader</label>
+    <trader>true</trader>
+    <combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Normal</itemQuality>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>200~200</weaponMoney>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_BowlerHat</li>
+    </apparelRequired>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>600~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+</Defs>

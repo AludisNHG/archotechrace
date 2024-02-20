@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerFactionArchotech</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [Archotech] Conglomeration</li>
+        <li>r_name->The Union of [Archotech] Power</li>
+      </rulesStrings>
+      <rulesFiles>
+		<li>Archotech->Words/Nouns/Archotech</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

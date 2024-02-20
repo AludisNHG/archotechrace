@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Save Our Ship 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Archotech_SocialExperiment" or defName="Archotech_Vatgrown" or defName="Archotech_Childhood" or defName="Archotech_Archotech_AI" or defName="Archotech_Pawn"]/forcedHediffs</xpath>
+					<value>
+						<li>SoSArchotechSkin</li>
+						<li>SoSArchotechLung</li>
+						<li>SoSArchotechLung</li>
+						<li>SoSArchotechEar</li>
+						<li>SoSArchotechEar</li>
+						<li>SoSArchotechNose</li>
+						<li>SoSArchotechJaw</li>
+						<li>SoSArchotechHeart</li>
+						<li>SoSArchotechKidney</li>
+						<li>SoSArchotechKidney</li>
+						<li>SoSArchotechLiver</li>
+						<li>SoSArchotechSpine</li>
+					</value>
+				</li>
+			</operations>
+			
+		</match>
+	</Operation>
+</Patch>
