@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="Archotech_Base">
+    <defName>Archorace</defName>
+    <label>Archotech</label>
+    <description>An enigmatic race created by the archotech AIs, better than a baseline human in any way. They can live to an artificially long age, don't have to eat nor sleep. However, to be made more easily controllable they were made more susceptible to psychic influence.</description>
+    <alienRace>
+        <generalSettings>
+			<raceGenes>
+				<li MayRequire="vanillaracesexpanded.archon">
+					<defName>VRE_Transcendent</defName>
+					<chance>100</chance>
+				</li>
+			</raceGenes>
+			<immuneToAge>false</immuneToAge>
+			<maxDamageForSocialfight>6</maxDamageForSocialfight>
+			<disallowedTraits>
+				<li>
+					<defName>BodyPurist</defName>	
+				</li>	
+				<li>				
+					<defName>Wimp</defName>
+				</li>
+				<li>				
+					<defName>Gourmand</defName>
+				</li>
+			</disallowedTraits>
+			<allowHumanBios>true</allowHumanBios>
+		        <alienPartGenerator>
+					 <headTypes>
+                        			<li>Male_AverageNormal</li>
+                        			<li>Male_AveragePointy</li>
+                        			<li>Male_AverageWide</li>
+                        			<li>Male_NarrowNormal</li>
+                        			<li>Male_NarrowPointy</li>
+                        			<li>Male_NarrowWide</li>
+                        			<li>Female_AverageNormal</li>
+                        			<li>Female_AveragePointy</li>
+                        			<li>Female_AverageWide</li>
+                        			<li>Female_NarrowNormal</li>
+                        			<li>Female_NarrowPointy</li>
+                       				<li>Female_NarrowWide</li>
+					</headTypes>
+					<bodyTypes>
+					  	<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li>Fat</li>
+						<li>Hulk</li>
+                       				<li>Thin</li>
+                        			<li>Female</li>
+                        			<li>Male</li>
+                    			</bodyTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+        </generalSettings>
+        <graphicPaths Inherit="False">
+				<body>Pawn/Archotech/Body/</body>
+				<head>Pawn/Archotech/Head/</head>
+				<skinShader>Cutout</skinShader>
+        </graphicPaths>
+		<thoughtSettings>
+			<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
+			<cannotReceiveThoughts>
+				<li>NeedFood</li>
+			</cannotReceiveThoughts>
+		</thoughtSettings>
+        <relationSettings>
+
+        </relationSettings>
+        <raceRestriction>
+				<blackGeneList>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+					<li MayRequire="vanillaracesexpanded.android">VREA_SyntheticSkin</li>
+                </blackGeneList>
+                <blackGeneTags>
+                    <li>SkinColor</li>
+                    <li>HairColor</li>
+                    <li>EyeColor</li>
+                    <li>BodyType</li>
+                    <li>Ears</li>
+                    <li>Nose</li>
+                    <li>Jaw</li>
+                    <li>Head</li>
+                    <li>Headbone</li>
+                    <li>HairStyle</li>
+                    <li>BeardStyle</li>
+                    <li>SkinColorOverride</li>
+                    <li>Fur</li>
+                    <li>Tail</li>
+                </blackGeneTags>
+                <blackEndoCategories>
+                    <li>Melanin</li>
+                    <li>HairColor</li>
+                    <li>Ears</li>
+                    <li>Nose</li>
+                    <li>Jaw</li>
+                    <li>Head</li>
+                    <li>BodyType</li>
+                </blackEndoCategories>
+        </raceRestriction>
+        <compatibility>
+			<isFlesh>true</isFlesh>
+			<isSentient>true</isSentient>
+			<hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>10000</lifeExpectancy>
+		<nameCategory>HumanStandard</nameCategory>
+		<body>Human</body>
+		<baseBodySize>1</baseBodySize>
+		<baseHealthScale>2</baseHealthScale>
+		<foodType>OmnivoreHuman</foodType>
+		<baseHungerRate>-1</baseHungerRate>
+		<needsRest>false</needsRest>
+		<ageGenerationCurve>
+			<points>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+				<li>(100,0)</li>
+				<li>(150,0)</li>
+				<li>(170,10)</li>
+				<li>(200,18)</li>
+				<li>(250,40)</li>
+				<li>(300,100)</li>
+				<li>(350,100)</li>
+				<li>(400,100)</li>
+				<li>(450,80)</li>
+				<li>(500,60)</li>
+				<li>(1000,30)</li>
+				<li>(2000,20)</li>
+				<li>(4000,8)</li>
+				<li>(6000,3)</li>
+				<li>(7000,0)</li>
+			</points>
+		</ageGenerationCurve>
+	</race>
+	<statBases>
+	  <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+    <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+		<MarketValue>4750</MarketValue>
+		<MoveSpeed>8.2</MoveSpeed>
+		<ComfyTemperatureMin>-125</ComfyTemperatureMin>
+		<ComfyTemperatureMax>250</ComfyTemperatureMax>
+		<PainShockThreshold>5</PainShockThreshold>
+		<ToxicResistance>1</ToxicResistance>
+		<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		<GlobalLearningFactor>4</GlobalLearningFactor>
+		<WorkSpeedGlobal>4</WorkSpeedGlobal>
+		<ImmunityGainSpeed>10</ImmunityGainSpeed>
+		<SocialImpact>1.50</SocialImpact>
+		<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+		<ButcheryFleshEfficiency>0.8</ButcheryFleshEfficiency>
+		<MedicalSurgerySuccessChance>1.5</MedicalSurgerySuccessChance>
+		<PsychicSensitivity>2</PsychicSensitivity>
+		<RoyalFavorValue>10</RoyalFavorValue>
+	</statBases>
+	<tools>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>50</power>
+			<cooldownTime>3</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>22</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>50</power>
+			<cooldownTime>3</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>22</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>1.2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<tradeTags>
+        	<li>AnimalInsectSpace</li>
+        </tradeTags>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>
